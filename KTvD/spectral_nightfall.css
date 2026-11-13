@@ -1,0 +1,46 @@
+/* SPECTRAL NIGHTFALL — marimo custom stylesheet */
+:root {
+  color-scheme: dark;
+  --marimo-text-font: "Segoe UI", Inter, Arial, sans-serif;
+  --marimo-heading-font: "Segoe UI", Inter, Arial, sans-serif;
+  --background: 270 7% 14%;
+  --foreground: 260 13% 95%;
+  --card: 260 8% 20%;
+  --card-foreground: 260 13% 95%;
+  --primary: 249 39% 39%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 260 9% 23%;
+  --muted-foreground: 260 12% 72%;
+  --border: 263 13% 29%;
+}
+html, body {background:#242329 !important; color:#f2f1f4 !important;}
+body {background-image: radial-gradient(ellipse 720px 420px at 91% 8%, rgba(72,61,139,.22), transparent 75%), radial-gradient(ellipse 750px 380px at 0% 43%, rgba(57,65,96,.18), transparent 75%) !important;}
+main, #root {color:#f2f1f4;}
+.marimo-cell, .output, .output-area {background: transparent !important;}
+.sn-hero, .sn-footer, .sn-metrics, .sn-metric {box-sizing: border-box;}
+.sn-hero {padding: 52px 48px 44px; margin: 6px 0 36px; border: 1px solid rgba(176,162,245,.17); border-radius: 23px; background: radial-gradient(ellipse at 90% 0%,rgba(105,80,175,.30),transparent 66%), linear-gradient(120deg,#302c3c 0%,#25242c 83%); box-shadow: 0 22px 56px rgba(0,0,0,.15);}
+.sn-eyebrow, .sn-section-kicker {font-size: 11px; letter-spacing: .18em; font-weight: 800; color:#b6a7ff; line-height:1.5;}
+.sn-hero-title {font-size: clamp(34px,4.3vw,65px); letter-spacing:-.052em; line-height:1.1; font-weight:760; color:#f7f5fc; margin:24px 0 20px;}
+.sn-hero-title span {color:#d8f8f8;}
+.sn-hero-desc {font-size: 16px; color:#c8c4d3; max-width:750px; line-height:1.75; margin:0 0 27px;}
+.sn-hero-tags {display:flex; flex-wrap:wrap;gap:9px;}
+.sn-hero-tags span {display:inline-block; font-size:11px; font-weight:650; letter-spacing:.035em; background:rgba(222,218,255,.075); border:1px solid rgba(216,205,255,.15);color:#e5dff8;padding:9px 13px;border-radius:999px;}
+.sn-section-title {font-size:28px; font-weight:740; letter-spacing:-.03em; margin:12px 0 22px;color:#f5f3f8;}
+.sn-metrics {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:0 0 20px;}
+.sn-metric {display:flex;flex-direction:column;min-height:146px;padding:20px 21px 18px;border-radius:16px;background:linear-gradient(145deg,#34313e,#2c2a32);border:1px solid #4d475b;}
+.sn-metric>span {font-size:10px;letter-spacing:.12em;color:#b9aacd;font-weight:800;}
+.sn-metric strong {font-weight:750;font-size:32px;line-height:1.3;letter-spacing:-.035em;color:#d8f8f8;margin:10px 0 8px;}
+.sn-metric strong.sn-metric-mode {font-size:20px;line-height:1.55;color:#eeebfc;letter-spacing:-.01em;}
+.sn-metric small {color:#a9a4b7;font-size:11px;margin-top:auto;}
+.sn-graph-caption {font-size:12px;line-height:1.7;color:#aaa4b9;margin:1px 0 40px;}
+.sn-footer {margin:26px 0 40px;padding:34px 38px 27px;border:1px solid #464051;border-radius:19px;background:linear-gradient(135deg,#302e39,#29272e);}
+.sn-footer-title {font-size:25px;font-weight:730;color:#f4f0fa;margin:14px 0 12px;}
+.sn-footer p {font-size:14px;color:#c9c4d5;line-height:1.75;max-width:840px;}
+.sn-endnote {padding-top:22px;margin-top:25px;border-top:1px solid #4a4551;color:#8e899e;font-size:10px;letter-spacing:.16em;}
+/* Native controls: consistent palette without hiding their semantics */
+input, select, button, [role="slider"] {accent-color:#9786e9;}
+button:focus-visible,input:focus-visible,select:focus-visible {outline:2px solid #c7bfff !important;outline-offset:2px;}
+@media(max-width:850px){.sn-metrics{grid-template-columns:repeat(2,minmax(0,1fr));}.sn-hero{padding:35px 26px;}.sn-footer{padding:27px 24px;}}
+@media(max-width:480px){.sn-metrics{grid-template-columns:1fr;}.sn-hero-title{font-size:34px;}.sn-hero{padding:28px 19px;}}
+
+.sn-authors{font-size:13px;color:#d8f8f8;font-weight:650;letter-spacing:.01em;margin:0 0 20px;line-height:1.6;}
